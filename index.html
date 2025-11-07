@@ -162,6 +162,14 @@
       color:var(--muted);
       font-size:13px;
     }
+    .profile-pic {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 
     /* small screens */
     @media (max-width:880px){
@@ -174,7 +182,10 @@
   <div class="wrap" role="main">
     <main class="main" aria-labelledby="name">
       <div class="hero" id="name">
-        <div class="avatar" aria-hidden="true">MM</div>
+        <div class="avatar">
+  <img src="profile.jpg" alt="Mahi Mandiwal" class="profile-pic">
+</div>
+
         <div>
           <h1>Mahi Mandiwal</h1>
           <p class="lead">B.Tech in Computer Science and Engineering (3rd year) • KIIT University • Cloud & ML • Open to internships</p>
@@ -309,3 +320,4 @@
   </script>
 </body>
 </html>
+
