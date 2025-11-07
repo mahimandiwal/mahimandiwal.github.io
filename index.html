@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YOUR NAME — Resume</title>
+  <meta name="description" content="Resume / portfolio of YOUR NAME — software developer, data scientist, etc." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --radius: 14px;
+      --maxw: 960px;
+      --gap: 20px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,var(--bg),#f3f6fb 60%);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 18px;
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:var(--gap);
+      align-items:start;
+    }
+
+    /* Left main column */
+    .main{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 6px 24px rgba(12,15,30,0.06);
+    }
+    .hero{
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+    .avatar{
+      flex:0 0 84px;
+      height:84px;
+      border-radius:16px;
+      background:linear-gradient(135deg,#e6eefc,#f4f9ff);
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      font-size:28px;
+      color:var(--accent);
+      box-shadow: inset 0 -2px 6px rgba(37,99,235,0.08);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
+    p.lead{
+      margin:6px 0 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .section{
+      margin-top:22px;
+    }
+    .section h3{
+      margin:0 0 12px 0;
+      font-size:14px;
+      letter-spacing:0.2px;
+      color:#111827;
+    }
+    .about{
+      line-height:1.6;
+      color:#111827;
+      font-size:14px;
+    }
+
+    .exp-item{
+      padding:12px;
+      border-radius:10px;
+      background: linear-gradient(180deg, rgba(37,99,235,0.02), transparent);
+      margin-bottom:10px;
+    }
+    .exp-top{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .role{ font-weight:600; font-size:15px; }
+    .company{ color:var(--muted); font-size:13px; }
+    .dates{ color:var(--muted); font-size:13px; white-space:nowrap; }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .chip{
+      background:#f1f5f9;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:#0f172a;
+      border:1px solid rgba(15,23,42,0.04);
+    }
+
+    /* Right column */
+    .side{
+      position:sticky;
+      top:28px;
+      align-self:start;
+      height:fit-content;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 6px 20px rgba(12,15,30,0.05);
+      margin-bottom:16px;
+    }
+    .contact a{
+      display:block;
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+      margin-bottom:8px;
+      word-break:break-all;
+    }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      text-decoration:none;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+    }
+    .download{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-top:12px;
+    }
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* small screens */
+    @media (max-width:880px){
+      .wrap{ grid-template-columns: 1fr; }
+      .side{ position:relative; top:auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <main class="main" aria-labelledby="name">
+      <div class="hero" id="name">
+        <div class="avatar" aria-hidden="true">YN</div>
+        <div>
+          <h1>YOUR NAME</h1>
+          <p class="lead">Role • Location • Open to internships / full-time</p>
+        </div>
+      </div>
+
+      <section class="section" aria-labelledby="about">
+        <h3 id="about">About</h3>
+        <div class="about">
+          Short professional summary — 1–2 sentences. Example: “3rd-year B.Tech student at KIIT (CGPA 9.5). Interested in Cloud Computing (GCP), Machine Learning, and backend engineering. Looking for summer internships to apply ML & cloud skills.”
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience">
+        <h3 id="experience">Experience</h3>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <div>
+              <div class="role">Intern — Company Name</div>
+              <div class="company">City • Short project tagline</div>
+            </div>
+            <div class="dates">May 2025 — Aug 2025</div>
+          </div>
+          <div style="margin-top:8px;color:var(--muted);font-size:14px;">
+            Brief bullet or sentence describing what you did and the measurable impact (1–2 lines).
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <div>
+              <div class="role">Project — Project Title</div>
+              <div class="company">Tech stack: Python, scikit-learn, GCP</div>
+            </div>
+            <div class="dates">2024</div>
+          </div>
+          <div style="margin-top:8px;color:var(--muted);font-size:14px;">
+            Short description and results. (E.g., “Built an ML model for X; improved accuracy from 72% → 86%.”)
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="education">
+        <h3 id="education">Education</h3>
+        <div style="font-weight:600">B.Tech — YOUR BRANCH</div>
+        <div style="color:var(--muted);margin-top:6px">KIIT University — CGPA: 9.5 (3rd year)</div>
+      </section>
+
+      <section class="section" aria-labelledby="projects">
+        <h3 id="projects">Selected Projects</h3>
+        <div class="exp-item">
+          <div class="role">Project Name</div>
+          <div class="company">Short one-line description — tech stack</div>
+        </div>
+        <div class="exp-item">
+          <div class="role">Another Project</div>
+          <div class="company">Short one-line description — link to repo (if public)</div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills">
+        <h3 id="skills">Skills</h3>
+        <div class="skills" aria-label="skills list">
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">scikit-learn</span>
+          <span class="chip">pandas</span>
+          <span class="chip">GCP</span>
+          <span class="chip">Git</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contactme">
+        <h3 id="contactme">Contact</h3>
+        <div style="color:var(--muted);font-size:14px">Available for internships · Open to remote/hybrid</div>
+        <div style="margin-top:10px">
+          Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br/>
+          LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">linkedin.com/in/YOUR-LINKEDIN</a>
+        </div>
+      </section>
+
+      <footer>
+        Tip: Replace the placeholder text with your details. For best results, keep the About to 2–3 lines and use short bullets for projects/experience.
+      </footer>
+    </main>
+
+    <aside class="side" aria-label="sidebar">
+      <div class="card contact" role="complementary">
+        <div style="font-weight:700;font-size:15px">Get resume</div>
+        <div style="color:var(--muted);margin-top:6px">Download a PDF version or view contact links.</div>
+        <div class="download">
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+          <a class="btn" href="mailto:your.email@example.com" style="background:#0f172a">Email</a>
+        </div>
+
+        <div style="margin-top:12px">
+          <a class="btn" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px">My GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:700">Quick links</div>
+        <div style="margin-top:10px;color:var(--muted)">
+          • Portfolio / Projects<br/>
+          • Blog / Publications<br/>
+          • References (available on request)
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    // small niceties: build initials from name if provided in meta or h1
+    (function(){
+      const h1 = document.querySelector('h1');
+      const avatar = document.querySelector('.avatar');
+      if(h1 && avatar){
+        const name = h1.textContent.trim();
+        const initials = name.split(' ').slice(0,2).map(s=>s[0]).join('').toUpperCase();
+        if(initials) avatar.textContent = initials;
+      }
+    })();
+  </script>
+</body>
+</html>
