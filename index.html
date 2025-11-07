@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mahi Mandiwal — Resume</title>
-  <meta name="description" content="Resume / portfolio of Mahi Mandiwal — B.Tech CSE student at KIIT, interested in Machine Learning & Cloud Computing." />
+  <meta name="description" content="Resume / portfolio of Mahi Mandiwal — B.Tech CSE student at KIIT, specializing in Machine Learning and Cloud Computing." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --bg: #f7f9fb;
@@ -39,7 +40,7 @@
       align-items:start;
     }
 
-    /* Left main column */
+    /* Main content */
     .main{
       background:var(--card);
       border-radius:var(--radius);
@@ -55,13 +56,14 @@
       flex:0 0 84px;
       height:84px;
       border-radius:16px;
-      background:linear-gradient(135deg,#e6eefc,#f4f9ff);
-      display:grid;
-      place-items:center;
-      font-weight:700;
-      font-size:28px;
-      color:var(--accent);
-      box-shadow: inset 0 -2px 6px rgba(37,99,235,0.08);
+      overflow:hidden;
+    }
+    .profile-pic {
+      width: 84px;
+      height: 84px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     h1{
       margin:0;
@@ -119,7 +121,6 @@
       border:1px solid rgba(15,23,42,0.04);
     }
 
-    /* Right column */
     .side{
       position:sticky;
       top:28px;
@@ -132,14 +133,6 @@
       padding:18px;
       box-shadow: 0 6px 20px rgba(12,15,30,0.05);
       margin-bottom:16px;
-    }
-    .contact a{
-      display:block;
-      color:var(--accent);
-      text-decoration:none;
-      font-weight:600;
-      margin-bottom:8px;
-      word-break:break-all;
     }
     .btn{
       display:inline-block;
@@ -162,30 +155,21 @@
       color:var(--muted);
       font-size:13px;
     }
-    .profile-pic {
-  width: 84px;
-  height: 84px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 
-
-    /* small screens */
     @media (max-width:880px){
       .wrap{ grid-template-columns: 1fr; }
       .side{ position:relative; top:auto; }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap" role="main">
     <main class="main" aria-labelledby="name">
       <div class="hero" id="name">
         <div class="avatar">
-  <img src="profile.jpg" alt="Mahi Mandiwal" class="profile-pic">
-</div>
-
+          <img src="profile.png" alt="Mahi Mandiwal" class="profile-pic">
+        </div>
         <div>
           <h1>Mahi Mandiwal</h1>
           <p class="lead">B.Tech in Computer Science and Engineering (3rd year) • KIIT University • Cloud & ML • Open to internships</p>
@@ -201,33 +185,18 @@
 
       <section class="section" aria-labelledby="experience">
         <h3 id="experience">Experience</h3>
-
         <div class="exp-item">
           <div class="exp-top">
             <div>
               <div class="role">Software / Cloud Projects</div>
-              <div class="company">Personal & Academic Projects • Full-stack & Cloud deployments</div>
+              <div class="company">Academic & Personal Projects • Full-stack & Cloud Deployments</div>
             </div>
             <div class="dates">2023 — Present</div>
           </div>
           <div style="margin-top:8px;color:var(--muted);font-size:14px;">
-            Built ML pipelines and deployed containerized models on GCP; implemented CI/CD for reproducible deployments and monitoring.
+            Designed and deployed containerized ML applications on GCP using Docker. Implemented CI/CD pipelines, automated deployment, and logging for efficiency.
           </div>
         </div>
-
-        <div class="exp-item">
-          <div class="exp-top">
-            <div>
-              <div class="role">Machine Learning Project — Sentiment & Detection</div>
-              <div class="company">Tech stack: Python, scikit-learn, TensorFlow, pandas</div>
-            </div>
-            <div class="dates">2022 — 2024</div>
-          </div>
-          <div style="margin-top:8px;color:var(--muted);font-size:14px;">
-            Worked on multiple ML classifiers including sentiment analysis and cancer-detection models; focused on data cleaning, feature engineering and evaluation using accuracy & recall metrics.
-          </div>
-        </div>
-
       </section>
 
       <section class="section" aria-labelledby="education">
@@ -240,7 +209,7 @@
         <h3 id="projects">Selected Projects</h3>
         <div class="exp-item">
           <div class="role">Student Habit Analyser</div>
-          <div class="company">Developed an ML model to analyze students’ daily habits and predict academic performance — Python, scikit-learn.</div>
+          <div class="company">Developed an ML model to analyze students’ daily habits and predict academic performance using Python and scikit-learn.</div>
         </div>
         <div class="exp-item">
           <div class="role">Cancer Detection using Machine Learning</div>
@@ -250,7 +219,7 @@
 
       <section class="section" aria-labelledby="skills">
         <h3 id="skills">Skills</h3>
-        <div class="skills" aria-label="skills list">
+        <div class="skills">
           <span class="chip">Python</span>
           <span class="chip">Java</span>
           <span class="chip">C</span>
@@ -277,26 +246,25 @@
       </section>
 
       <footer>
-        Tip: Replace or expand the Experience section with internship/company details as you get them. Keep descriptions short and quantify impact where possible.
+        Tip: Keep your resume updated and projects section fresh. Recruiters love seeing consistent learning growth.
       </footer>
     </main>
 
     <aside class="side" aria-label="sidebar">
       <div class="card contact" role="complementary">
-        <div style="font-weight:700;font-size:15px">Get resume</div>
+        <div style="font-weight:700;font-size:15px">Get Resume</div>
         <div style="color:var(--muted);margin-top:6px">Download a PDF version or contact me directly.</div>
         <div class="download">
           <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
           <a class="btn" href="mailto:mmandiwal2024@gmail.com" style="background:#0f172a">Email</a>
         </div>
-
         <div style="margin-top:12px">
           <a class="btn" href="https://github.com/mahimandiwal" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px">My GitHub</a>
         </div>
       </div>
 
       <div class="card">
-        <div style="font-weight:700">Quick links</div>
+        <div style="font-weight:700">Quick Links</div>
         <div style="margin-top:10px;color:var(--muted)">
           • Portfolio / Projects<br/>
           • Blog / Publications<br/>
@@ -305,19 +273,5 @@
       </div>
     </aside>
   </div>
-
-  <script>
-    // small niceties: build initials from name if provided in meta or h1
-    (function(){
-      const h1 = document.querySelector('h1');
-      const avatar = document.querySelector('.avatar');
-      if(h1 && avatar){
-        const name = h1.textContent.trim();
-        const initials = name.split(' ').slice(0,2).map(s=>s[0]).join('').toUpperCase();
-        if(initials) avatar.textContent = initials;
-      }
-    })();
-  </script>
 </body>
 </html>
-
