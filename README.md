@@ -91,4 +91,4 @@ ML Models • Data Visualization • Cloud Deployment • DSA (Java)
 
 📧 **mmandiwal2024@gmail.com**  
 🔗 **LinkedIn:** https://linkedin.com/in/mahimandiwal  
-💻 **GitHub:** https://gi
+💻 **GitHub:** https://github.com/mahimandiwal
