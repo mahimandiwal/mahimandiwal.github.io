@@ -1,79 +1,124 @@
-# 🌐 Mahi Mandiwal — Personal Resume Website
+# 🌟 Mahi Mandiwal — ML & Software Development Enthusiast  
+### B.Tech CSE (3rd year) | KIIT University | CGPA: 9.6  
 
-Welcome to my personal **resume & portfolio website**, built using clean HTML, CSS, and deployed via **GitHub Pages**.  
-It showcases my academic background, technical skills, and projects in **Machine Learning**, **Cloud Computing**, and **Software Development**.
+Welcome to my personal GitHub!  
+I am a 3rd-year Computer Science & Engineering student at **KIIT University**, passionate about **Machine Learning, Data Analysis, Cloud Computing, and Full-Stack Development**.
 
-🔗 **Live Site:** [https://mahimandiwal.github.io](https://mahimandiwal.github.io)
+I love building real-world ML applications, deploying systems, and solving problems using Python, Java, SQL, and modern data science libraries.
 
 ---
 
 ## 👩‍💻 About Me
 
-I’m a **3rd-year B.Tech student at KIIT University (CGPA: 9.5)** specializing in **Computer Science and Engineering**.  
-I’m passionate about **Machine Learning**, **Cloud Computing (GCP)**, and **Data-Driven Development**.  
-Proficient in **Python**, **Java**, and **C**, with hands-on experience in ML libraries like **scikit-learn**, **pandas**, and **TensorFlow**.  
-I also enjoy building and deploying ML models to the cloud and applying DSA concepts in Java to solve real-world problems.
+- 🎓 **B.Tech in Computer Science & Engineering (3rd year)**  
+- 📊 **CGPA:** 9.6 / 10  
+- 🤖 Passionate about **Machine Learning**, **Cloud Computing**, and **Data-Driven Development**  
+- 💻 Strong in **Python**, **Java**, **SQL**, and data science libraries  
+- 🌐 Experience building **Streamlit apps**, ML pipelines, and deploying projects  
+- 🤝 Active **NSS volunteer**, with leadership & communication skills  
+- 🔍 Open to **ML / Software Development Internships** (remote or hybrid)
 
 ---
 
 ## 🚀 Projects
 
-### 🟢 Student Habit Analyser
-Developed an ML model to analyze students’ daily habits and predict academic performance using Python and scikit-learn.
+### 🔹 **Student Habit Analyser (Streamlit + ML)**
+Built an ML model to analyze students' daily habits (sleep hours, study time, attendance) and predict academic performance.  
+**Tech:** Python, scikit-learn, pandas, NumPy  
+**Features:**  
+- Data preprocessing  
+- ML-based prediction  
+- Interactive Streamlit UI  
 
-### 🩺 Cancer Detection using Machine Learning
-Implemented classification algorithms for early breast cancer detection and evaluated models using accuracy and recall metrics.
-
----
-
-## 🧰 Tech Stack
-
-| Category | Tools / Languages |
-|-----------|------------------|
-| **Languages** | Python, Java, C |
-| **Libraries** | scikit-learn, pandas, numpy, TensorFlow |
-| **Cloud / Tools** | Google Cloud Platform (GCP), Docker, Git |
-| **Core Areas** | Machine Learning, Cloud Deployment, Data Structures & Algorithms (Java) |
+🔗 **Live App:** https://appproject-hz79ta668dsidnjjepjx5x.streamlit.app/
 
 ---
 
-## 🏫 Education
-
-**B.Tech in Computer Science and Engineering**  
-_KIIT University, Bhubaneswar_  
-**CGPA:** 9.5 (3rd Year)
-
----
-
-## 🧑‍💼 Experience
-
-- **Software & Cloud Projects (2023–Present)**  
-  Built and deployed containerized ML applications on GCP using Docker. Implemented CI/CD automation for efficient deployment and monitoring.
+### 🔹 **Cancer Detection using Machine Learning**
+Designed a classification model for early breast cancer detection.  
+**Tech:** scikit-learn, pandas, NumPy, Matplotlib, Seaborn  
+**Highlights:**  
+- Preprocessing & feature scaling  
+- Accuracy & recall evaluation  
+- Visualization using Matplotlib & Seaborn  
 
 ---
 
-## 🧾 Resume & Assets
+## 🛠 Tech Skills
 
-| File | Description |
-|------|--------------|
-| `index.html` | Main website file |
-| `resume.pdf` | My updated resume |
-| `profile.png` | Profile photo used in website |
-| `README.md` | Project documentation |
+### **Languages**
+- Python  
+- Java  
+- C  
+- SQL  
+- HTML  
+- CSS  
+
+### **Machine Learning & Data Science**
+- scikit-learn  
+- TensorFlow  
+- pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+
+### **Tools & Platforms**
+- Streamlit  
+- Jupyter Notebook  
+- Git / GitHub  
+- Google Cloud Platform (GCP)  
+
+### **Core Competencies**
+- ML Model Building  
+- Data Visualization  
+- Cloud Deployment  
+- DSA (Java)  
+- Problem Solving  
 
 ---
 
-## 🖼️ How to Change Profile Photo
+## 🎖 Certifications
 
-1. Replace the existing `profile.png` file with your own photo.  
-2. Use a **square image (1:1 ratio)** — ideally **300×300 px**.  
-3. Keep the filename `profile.png` (so the site automatically loads it).
+- [Supervised Machine Learning: Regression & Classification — Coursera](https://coursera.org/share/5a5feebe76dd1b37e5d50f68a2b58af9)  
+- [Advanced Learning Algorithms — Coursera](https://coursera.org/share/524d39218595493527864612e08437f7)  
+- [Red Hat System Administration I (RH124 – RHA), Ver. 9.3](https://drive.google.com/file/d/1h5tBDgkfGSSUxdNCCN5hVBDwm9H5yh6G/view)  
+- [LEAP Ideathon — Idea Pioneer (Providence)](https://drive.google.com/file/d/112EbAM1NOyvNK6U626GlyF-ikioABdOI/view)  
+- [Flipkart Runway: Season 5 — Online Assessment](https://drive.google.com/file/d/1gpF92-Vyq9df8LaSYsIZl09HAKZizCvH/view)  
+- [Paper Presentation — Blockchain for Sustainable India & Green Energy](https://drive.google.com/file/d/1BDfDOHDhtcvQj3Qk0Hr7uRneRz9im4dA/view)  
 
 ---
 
-## ⚙️ How to Deploy (GitHub Pages)
+## 🧑‍🤝‍🧑 Experience
 
-### 🪶 One-time Setup
+### **NSS Volunteer — KIIT University**  
+📅 *Sep 2024 – Present*  
+- Led and participated in community outreach: slum visits, education drives  
+- Worked with 10+ volunteers on social impact initiatives  
+- Built communication, leadership, and coordination skills  
 
-1. Create a repository named exactly **`mahimandiwal.github.io`**
-2. Upload the following files:
+---
+
+## 🎓 Education  
+
+**Bachelor of Technology — Computer Science & Engineering**  
+*Kalinga Institute of Industrial Technology (KIIT)*  
+- **CGPA:** 9.6 / 10  
+- Coursework: DSA (Java), OOP, DBMS, Operating Systems, ML, Cloud Computing  
+
+---
+
+## 📄 Resume  
+📥 Download Latest Resume (PDF):  
+👉 https://mahimandiwal.github.io/mahi_resume.pdf  
+
+---
+
+## 📬 Contact Me
+
+📧 Email: **mmandiwal2024@gmail.com**  
+🔗 LinkedIn: https://linkedin.com/in/mahimandiwal  
+💻 GitHub: https://github.com/mahimandiwal  
+
+---
+
+### ⭐ If you like my work, feel free to star my repositories!  
