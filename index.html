@@ -3,323 +3,128 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mahi Mandiwal — Resume</title>
-  <meta name="description" content="Resume / portfolio of Mahi Mandiwal — B.Tech CSE student at KIIT, specializing in Machine Learning, Data Analysis, and Web Development." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Mahi Mandiwal — Portfolio</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --bg: #f7f9fb;
-      --card: #ffffff;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --radius: 14px;
-      --maxw: 960px;
-      --gap: 20px;
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
-      color-scheme: light;
-    }
-    *{box-sizing:border-box}
-    body{
+    body {
       margin:0;
-      background: linear-gradient(180deg,var(--bg),#f3f6fb 60%);
+      font-family: 'Inter', sans-serif;
+      background:#f7f9fb;
       display:flex;
-      align-items:flex-start;
       justify-content:center;
-      padding:40px 18px;
-      color:#0f172a;
-      -webkit-font-smoothing:antialiased;
+      padding:40px;
     }
-    .wrap{
+
+    .container {
+      max-width:900px;
       width:100%;
-      max-width:var(--maxw);
-      display:grid;
-      grid-template-columns: 1fr 340px;
-      gap:var(--gap);
-      align-items:start;
+      background:white;
+      padding:30px;
+      border-radius:14px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.06);
     }
 
-    .main{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:28px;
-      box-shadow: 0 6px 24px rgba(12,15,30,0.06);
-    }
-    .hero{
-      display:flex;
-      gap:18px;
-      align-items:center;
-    }
-    .avatar{
-      flex:0 0 84px;
-      height:84px;
-      border-radius:16px;
-      overflow:hidden;
-    }
-    .profile-pic {
-      width: 84px;
-      height: 84px;
-      object-fit: cover;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h1{
-      margin:0;
-      font-size:20px;
-      letter-spacing:-0.2px;
-    }
-    p.lead{
-      margin:6px 0 0 0;
-      color:var(--muted);
-      font-size:14px;
-    }
+    h1 { margin:0; }
+    h3 { margin-top:25px; }
 
-    .section{
-      margin-top:22px;
-    }
-    .section h3{
-      margin:0 0 12px 0;
-      font-size:14px;
-      letter-spacing:0.2px;
-      color:#111827;
-    }
-    .about{
-      line-height:1.6;
-      color:#111827;
-      font-size:14px;
-    }
+    .muted { color:#6b7280; }
 
-    .exp-item{
+    .project {
+      margin-top:12px;
       padding:12px;
       border-radius:10px;
-      background: linear-gradient(180deg, rgba(37,99,235,0.02), transparent);
-      margin-bottom:10px;
-    }
-    .exp-top{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:flex-start;
-    }
-    .role{ font-weight:600; font-size:15px; }
-    .company{ color:var(--muted); font-size:13px; }
-    .dates{ color:var(--muted); font-size:13px; white-space:nowrap; }
-
-    .skills{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-    }
-    .chip{
       background:#f1f5f9;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 12px;
+      background:#2563eb;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    .skills span {
+      display:inline-block;
+      margin:5px;
       padding:6px 10px;
+      background:#e2e8f0;
       border-radius:999px;
       font-size:13px;
-      color:#0f172a;
-      border:1px solid rgba(15,23,42,0.04);
-    }
-
-    .side{
-      position:sticky;
-      top:28px;
-      height:fit-content;
-    }
-    .card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow: 0 6px 20px rgba(12,15,30,0.05);
-      margin-bottom:16px;
-    }
-    .btn{
-      display:inline-block;
-      background:var(--accent);
-      color:white;
-      text-decoration:none;
-      padding:10px 14px;
-      border-radius:10px;
-      font-weight:600;
-      box-shadow: 0 6px 18px rgba(37,99,235,0.12);
-    }
-    .download{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      align-items:center;
-      margin-top:12px;
-    }
-    footer{
-      margin-top:18px;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    @media (max-width:880px){
-      .wrap{ grid-template-columns: 1fr; }
-      .side{ position:relative; top:auto; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap" role="main">
 
-    <main class="main" aria-labelledby="name">
-      <div class="hero" id="name">
-        <div class="avatar">
-          <img src="profile.png" alt="Mahi Mandiwal" class="profile-pic">
-        </div>
-        <div>
-          <h1>Mahi Mandiwal</h1>
-          <p class="lead">
-            B.Tech CSE (3rd year) • KIIT University • Machine Learning • Data Analysis • Web Development • Open to internships
-          </p>
-        </div>
-      </div>
+<div class="container">
 
-      <section class="section" id="about">
-        <h3>About</h3>
-        <div class="about">
-          3rd-year B.Tech CSE student at KIIT University with a CGPA of <strong>9.6</strong>. 
-          Skilled in Machine Learning, Data Analysis, and Web Development. 
-          Experienced with Python, Java, SQL, Streamlit, scikit-learn, TensorFlow, pandas, NumPy, Matplotlib, and Seaborn. 
-          Actively involved in NSS, contributing to social outreach and leadership activities.
-        </div>
-      </section>
+  <h1>Mahi Mandiwal</h1>
+  <p class="muted">
+    B.Tech CSE • KIIT • CGPA: 9.49 <br>
+    Machine Learning • Data Science
+  </p>
 
-      <section class="section" id="experience">
-        <h3>Experience</h3>
-        <div class="exp-item">
-          <div class="exp-top">
-            <div>
-              <div class="role">NSS Volunteer</div>
-              <div class="company">National Service Scheme (NSS), KIIT</div>
-            </div>
-            <div class="dates">Sep 2024 — Present</div>
-          </div>
-          <div style="margin-top:8px;color:var(--muted);font-size:14px;">
-            Participated in slum visits, education drives, and social awareness campaigns.  
-            Worked with 10+ volunteers, improving teamwork, communication, and leadership skills.
-          </div>
-        </div>
-      </section>
+  <p>
+    Machine Learning-focused Computer Science undergraduate with experience in building and deploying predictive models using
+    scikit-learn, TensorFlow, and Streamlit. Strong in data preprocessing, feature engineering,
+    and real-world ML applications.
+  </p>
 
-      <section class="section" id="education">
-        <h3>Education</h3>
-        <div style="font-weight:600">B.Tech — Computer Science and Engineering</div>
-        <div style="color:var(--muted);margin-top:6px">
-          Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar<br/>
-          CGPA: <strong>9.6 / 10</strong>
-        </div>
-      </section>
+  <!-- PROJECTS -->
+  <h3>Projects</h3>
 
-      <section class="section" id="projects">
-        <h3>Projects</h3>
-
-        <div class="exp-item">
-          <div class="role">Student Habit Analyser (Streamlit + ML)</div>
-          <div class="company" style="margin-top:4px;">
-            Built an ML model to analyze students’ daily habits and predict academic performance.  
-            Developed using Python, scikit-learn, pandas, and NumPy.  
-            Deployed with Streamlit for real-time input and prediction.
-          </div>
-          <div style="margin-top:6px;font-size:13px;">
-            Live app:  
-            <a href="https://appproject-hz79ta668dsidnjjepjx5x.streamlit.app/" target="_blank" rel="noopener">
-              Streamlit App Link
-            </a>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="role">Cancer Detection using Machine Learning</div>
-          <div class="company" style="margin-top:4px;">
-            Implemented ML classification models for early breast cancer detection.  
-            Used accuracy/recall evaluation, and visualized results using Matplotlib and Seaborn.
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <h3>Skills</h3>
-        <div class="skills">
-          <span class="chip">Python</span>
-          <span class="chip">Java</span>
-          <span class="chip">C</span>
-          <span class="chip">SQL</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">Machine Learning</span>
-          <span class="chip">Data Visualization</span>
-          <span class="chip">scikit-learn</span>
-          <span class="chip">TensorFlow</span>
-          <span class="chip">pandas</span>
-          <span class="chip">NumPy</span>
-          <span class="chip">Matplotlib</span>
-          <span class="chip">Seaborn</span>
-          <span class="chip">Streamlit</span>
-          <span class="chip">Jupyter Notebook</span>
-          <span class="chip">Git</span>
-          <span class="chip">GitHub</span>
-          <span class="chip">DSA (Java)</span>
-        </div>
-      </section>
-
-      <section class="section" id="certs">
-        <h3>Certifications</h3>
-        <ul style="padding-left:18px; margin:0; color:var(--muted); font-size:14px; line-height:1.6;">
-          <li><a href="https://coursera.org/share/5a5feebe76dd1b37e5d50f68a2b58af9" target="_blank">Supervised Machine Learning — Coursera</a></li>
-          <li><a href="https://coursera.org/share/524d39218595493527864612e08437f7" target="_blank">Advanced Learning Algorithms — Coursera</a></li>
-          <li><a href="https://drive.google.com/file/d/1h5tBDgkfGSSUxdNCCN5hVBDwm9H5yh6G/view" target="_blank">Red Hat System Administration I — RHA 9.3</a></li>
-          <li><a href="https://drive.google.com/file/d/112EbAM1NOyvNK6U626GlyF-ikioABdOI/view" target="_blank">LEAP Ideathon — Providence</a></li>
-          <li><a href="https://drive.google.com/file/d/1gpF92-Vyq9df8LaSYsIZl09HAKZizCvH/view" target="_blank">Flipkart Runway: Season 5</a></li>
-          <li><a href="https://drive.google.com/file/d/1BDfDOHDhtcvQj3Qk0Hr7uRneRz9im4dA/view" target="_blank">Research Paper — Blockchain & Green Energy</a></li>
-        </ul>
-      </section>
-
-      <section class="section" id="contact">
-        <h3>Contact</h3>
-        <div style="color:var(--muted);font-size:14px">
-          Available for internships (ML / Software Development) <br/>Open to on-site, remote, and hybrid opportunities.
-        </div>
-        <div style="margin-top:10px">
-          Email: <a href="mailto:mmandiwal2024@gmail.com">mmandiwal2024@gmail.com</a><br/>
-          LinkedIn: <a href="https://www.linkedin.com/in/mahimandiwal" target="_blank">linkedin.com/in/mahimandiwal</a><br/>
-          GitHub: <a href="https://github.com/mahimandiwal" target="_blank">github.com/mahimandiwal</a>
-        </div>
-      </section>
-
-      <footer>
-        This page always mirrors the latest version of my resume.
-      </footer>
-    </main>
-
-    <aside class="side">
-      <div class="card">
-        <div style="font-weight:700;font-size:15px">Get Resume</div>
-        <div style="color:var(--muted);margin-top:6px">Download a PDF version or contact me directly.</div>
-
-        <div class="download">
-          <a class="btn" href="mahi_resume.pdf" target="_blank">Download CV (PDF)</a>
-          <a class="btn" href="mailto:mmandiwal2024@gmail.com" style="background:#0f172a">Email</a>
-        </div>
-
-        <div style="margin-top:12px">
-          <a class="btn" href="https://github.com/mahimandiwal" target="_blank">My GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="font-weight:700">Quick Links</div>
-        <div style="margin-top:10px;color:var(--muted)">
-          • ML & Data Projects<br/>
-          • Resume PDF (always updated)<br/>
-          • References available on request
-        </div>
-      </div>
-    </aside>
-
+  <div class="project">
+    <b>Student Habit Analyzer</b><br>
+    Built ML model on 500+ student records.<br>
+    Achieved <b>87% accuracy</b> using Random Forest.<br>
+    <a class="btn" href="https://appproject-hz79ta668dsidnjjepjx5x.streamlit.app/" target="_blank">Live App</a>
+    <a class="btn" href="https://github.com/mahimandiwal/student-habit-analyzer" target="_blank">GitHub</a>
   </div>
+
+  <div class="project">
+    <b>Customer Churn Prediction</b><br>
+    ANN model on 10,000+ records.<br>
+    Achieved <b>85% accuracy | 0.88 ROC-AUC</b><br>
+    <a class="btn" href="https://churnmodelling-77ktjhumzsubbqsrueyh4w.streamlit.app/" target="_blank">Live App</a>
+    <a class="btn" href="https://github.com/mahimandiwal/customer-churn-prediction" target="_blank">GitHub</a>
+  </div>
+
+  <!-- SKILLS -->
+  <h3>Skills</h3>
+  <div class="skills">
+    <span>Python</span>
+    <span>Java</span>
+    <span>SQL</span>
+    <span>Machine Learning</span>
+    <span>Deep Learning</span>
+    <span>TensorFlow</span>
+    <span>scikit-learn</span>
+    <span>pandas</span>
+    <span>NumPy</span>
+    <span>Streamlit</span>
+    <span>Git</span>
+    <span>DSA</span>
+  </div>
+
+  <!-- CONTACT -->
+  <h3>Contact</h3>
+  <p>
+    Email: <a href="mailto:mmandiwal2024@gmail.com">mmandiwal2024@gmail.com</a><br>
+    GitHub: <a href="https://github.com/mahimandiwal" target="_blank">github.com/mahimandiwal</a><br>
+    LinkedIn: <a href="https://linkedin.com/in/mahimandiwal" target="_blank">linkedin.com/in/mahimandiwal</a>
+  </p>
+
+  <!-- RESUME -->
+  <h3>Resume</h3>
+  <a class="btn" href="mahi_resume.pdf" target="_blank">Download Resume</a>
+
+</div>
+
 </body>
 </html>
