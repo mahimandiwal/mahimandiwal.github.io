@@ -10,22 +10,22 @@
 
 <style>
 :root {
-  --bg: #f7f9fb;
-  --text: #111827;
-  --card: #ffffff;
+  --bg:#f7f9fb;
+  --text:#111827;
+  --card:#ffffff;
 }
 
 .dark {
-  --bg: #0f172a;
-  --text: #f1f5f9;
-  --card: #1e293b;
+  --bg:#0f172a;
+  --text:#f1f5f9;
+  --card:#1e293b;
 }
 
 body {
   margin:0;
   font-family:'Inter',sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background:var(--bg);
+  color:var(--text);
   transition:0.3s;
 }
 
@@ -43,21 +43,20 @@ body {
 }
 
 .profile-pic {
-  width:90px;
-  height:90px;
-  border-radius:16px;
+  width:95px;
+  height:95px;
+  border-radius:18px;
+  object-fit:cover;
 }
 
-h1 {
-  margin:0;
-}
+h1 { margin:0; }
 
 .typing {
   color:#3b82f6;
   font-weight:600;
 }
 
-/* TOGGLE */
+/* DARK MODE BUTTON */
 .toggle {
   position:fixed;
   top:20px;
@@ -71,7 +70,7 @@ h1 {
 
 /* CARD */
 .card {
-  background: var(--card);
+  background:var(--card);
   padding:16px;
   margin-top:16px;
   border-radius:14px;
@@ -87,24 +86,40 @@ h1 {
 .btn {
   display:inline-block;
   margin-top:10px;
-  padding:8px 14px;
-  background:#2563eb;
+  margin-right:8px;
+  padding:10px 16px;
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
   color:white;
-  border-radius:8px;
+  border-radius:10px;
   text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  box-shadow:0 6px 15px rgba(37,99,235,0.3);
+  transition:0.25s;
 }
 
+.btn:hover {
+  transform:translateY(-2px) scale(1.05);
+  box-shadow:0 10px 25px rgba(37,99,235,0.4);
+}
+
+/* SKILLS */
 .skills span {
   margin:5px;
   padding:6px 10px;
   background:#e2e8f0;
   border-radius:999px;
   display:inline-block;
+  font-size:13px;
 }
 
 .dark .skills span {
   background:#334155;
 }
+
+/* LINKS */
+a { color:#2563eb; }
+
 </style>
 </head>
 
@@ -114,96 +129,121 @@ h1 {
 
 <div class="container">
 
-  <!-- HERO -->
-  <div class="hero">
-    <img src="profile.png" class="profile-pic">
-    <div>
-      <h1>Mahi Mandiwal</h1>
-      <div class="typing" id="typing"></div>
-    </div>
+<!-- HERO -->
+<div class="hero">
+  <img src="profile.png" class="profile-pic">
+  <div>
+    <h1>Mahi Mandiwal</h1>
+    <div class="typing" id="typing"></div>
+    <p>B.Tech CSE • KIIT • CGPA: 9.49</p>
+
+    <!-- 🔥 TOP RESUME BUTTON -->
+    <a class="btn" href="mahi_resume.pdf" target="_blank" download>📄 Download Resume</a>
   </div>
+</div>
 
-  <!-- ABOUT -->
-  <p>
-    Machine Learning-focused Computer Science undergraduate with experience building and deploying predictive models using
-    scikit-learn, TensorFlow, and Streamlit.
-  </p>
+<!-- ABOUT -->
+<p>
+Machine Learning-focused Computer Science undergraduate with experience building and deploying predictive models using
+scikit-learn, TensorFlow, and Streamlit. Strong in data preprocessing, feature engineering,
+and real-world ML applications.
+</p>
 
-  <!-- PROJECTS -->
-  <h3>Projects</h3>
+<!-- PROJECTS -->
+<h3>Projects</h3>
 
-  <div class="card">
-    <b>Student Habit Analyzer</b><br>
-    87% accuracy on 500+ records<br>
-    <a class="btn" href="https://appproject-hz79ta668dsidnjjepjx5x.streamlit.app/" target="_blank">Live</a>
-    <a class="btn" href="https://github.com/mahimandiwal/student-habit-analyzer" target="_blank">Code</a>
-  </div>
+<div class="card">
+<b>Student Habit Analyzer</b><br>
+Built ML model on 500+ student records<br>
+Achieved <b>87% accuracy</b> using Random Forest<br>
+<a class="btn" href="https://appproject-hz79ta668dsidnjjepjx5x.streamlit.app/" target="_blank">Live</a>
+<a class="btn" href="https://github.com/mahimandiwal/student-habit-analyzer" target="_blank">GitHub</a>
+</div>
 
-  <div class="card">
-    <b>Customer Churn Prediction</b><br>
-    85% accuracy | 0.88 ROC-AUC<br>
-    <a class="btn" href="https://churnmodelling-77ktjhumzsubbqsrueyh4w.streamlit.app/" target="_blank">Live</a>
-    <a class="btn" href="https://github.com/mahimandiwal/customer-churn-prediction" target="_blank">Code</a>
-  </div>
+<div class="card">
+<b>Customer Churn Prediction</b><br>
+ANN model on 10,000+ records<br>
+Achieved <b>85% accuracy | 0.88 ROC-AUC</b><br>
+<a class="btn" href="https://churnmodelling-77ktjhumzsubbqsrueyh4w.streamlit.app/" target="_blank">Live</a>
+<a class="btn" href="https://github.com/mahimandiwal/customer-churn-prediction" target="_blank">GitHub</a>
+</div>
 
-  <!-- SKILLS -->
-  <h3>Skills</h3>
-  <div class="skills">
-    <span>Python</span><span>ML</span><span>DL</span>
-    <span>TensorFlow</span><span>pandas</span>
-    <span>NumPy</span><span>Git</span>
-  </div>
+<!-- SKILLS -->
+<h3>Skills</h3>
+<div class="skills">
+<span>Python</span>
+<span>Java</span>
+<span>C</span>
+<span>SQL</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Machine Learning</span>
+<span>Deep Learning</span>
+<span>Data Preprocessing</span>
+<span>Feature Engineering</span>
+<span>Model Evaluation</span>
+<span>TensorFlow</span>
+<span>scikit-learn</span>
+<span>pandas</span>
+<span>NumPy</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+<span>Streamlit</span>
+<span>Git</span>
+<span>GitHub</span>
+<span>Jupyter Notebook</span>
+<span>DSA (Java)</span>
+</div>
 
-  <!-- CERTIFICATIONS -->
-  <h3>Certifications</h3>
-  <div class="card">
-    <a href="https://coursera.org/share/5a5feebe76dd1b37e5d50f68a2b58af9">Supervised ML</a><br>
-    <a href="https://coursera.org/share/524d39218595493527864612e08437f7">Advanced ML</a><br>
-    <a href="https://unstop.com/certificate-preview/02d6fcd1-b220-465e-aa04-9c22c198a6a0">Flipkart Runway</a>
-  </div>
+<!-- CERTIFICATIONS -->
+<h3>Certifications</h3>
+<div class="card">
+<a href="https://coursera.org/share/5a5feebe76dd1b37e5d50f68a2b58af9" target="_blank">Supervised Machine Learning — Coursera</a><br>
+<a href="https://coursera.org/share/524d39218595493527864612e08437f7" target="_blank">Advanced Learning Algorithms — Coursera</a><br>
+<a href="https://drive.google.com/file/d/1h5tBDgkfGSSUxdNCCN5hVBDwm9H5yh6G/view" target="_blank">Red Hat System Administration (RH124)</a><br>
+<a href="https://unstop.com/certificate-preview/65d746ec-a858-47d3-9101-b1d9e68f7f43" target="_blank">LEAP Ideathon</a><br>
+<a href="https://unstop.com/certificate-preview/02d6fcd1-b220-465e-aa04-9c22c198a6a0" target="_blank">Flipkart Runway</a><br>
+<a href="https://drive.google.com/" target="_blank">Research Paper — Blockchain for Sustainable India</a>
+</div>
 
-  <!-- CONTACT -->
-  <h3>Contact</h3>
-  <p>
-    Email: <a href="mailto:mmandiwal2024@gmail.com">mmandiwal2024@gmail.com</a><br>
-    GitHub: <a href="https://github.com/mahimandiwal">GitHub</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/mahimandiwal">LinkedIn</a>
-  </p>
+<!-- CONTACT -->
+<h3>Contact</h3>
+<p>
+Email: <a href="mailto:mmandiwal2024@gmail.com">mmandiwal2024@gmail.com</a><br>
+GitHub: <a href="https://github.com/mahimandiwal">github.com/mahimandiwal</a><br>
+LinkedIn: <a href="https://linkedin.com/in/mahimandiwal">linkedin.com/in/mahimandiwal</a>
+</p>
+
+<!-- RESUME -->
+<h3>Resume</h3>
+<a class="btn" href="mahi_resume.pdf" target="_blank" download>📄 Download Resume</a>
 
 </div>
 
 <script>
-const text = ["Machine Learning", "Data Science", "Software Development"];
-let i = 0, j = 0, current = "", isDeleting = false;
+const text=["Machine Learning","Data Science","Software Development"];
+let i=0,j=0,current="",isDeleting=false;
 
-function type() {
-  current = text[i];
-  if (isDeleting) {
-    j--;
-  } else {
-    j++;
-  }
+function type(){
+current=text[i];
+if(isDeleting){j--;}else{j++;}
+document.getElementById("typing").innerText=current.substring(0,j);
 
-  document.getElementById("typing").innerText = current.substring(0, j);
-
-  if (!isDeleting && j === current.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-    return;
-  }
-
-  if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % text.length;
-  }
-
-  setTimeout(type, isDeleting ? 50 : 100);
+if(!isDeleting && j===current.length){
+isDeleting=true;
+setTimeout(type,1000);
+return;
 }
-
+if(isDeleting && j===0){
+isDeleting=false;
+i=(i+1)%text.length;
+}
+setTimeout(type,isDeleting?50:100);
+}
 type();
 
-function toggleMode() {
-  document.body.classList.toggle("dark");
+function toggleMode(){
+document.body.classList.toggle("dark");
 }
 </script>
 
